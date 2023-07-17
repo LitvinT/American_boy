@@ -6,6 +6,7 @@ async def on_startup(bot: Bot):
     await bot.set_my_commands(
         commands=[
             BotCommand(command='/start', description='Restart'),
+            BotCommand(command='/admin', description='Admin panel'),
         ],
         scope=BotCommandScopeAllPrivateChats(),
         language_code='ru'

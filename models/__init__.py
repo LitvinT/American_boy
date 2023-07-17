@@ -1,10 +1,10 @@
-from .models import (Base, Category, User, Calculator, Coin)
+from .models import (Base, User, Calculator, Coin, Admin)
 
 
 __all__: list[str] = [
     'Base',
-    'Category',
     'User',
     'Calculator',
-    'Coin'
+    'Coin',
+    'Admin'
 ]

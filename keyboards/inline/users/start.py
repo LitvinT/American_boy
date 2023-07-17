@@ -15,7 +15,7 @@ async def start_ikb() -> InlineKeyboardMarkup:
             InlineKeyboardButton(
                 text=calculator.name.upper(),
                 callback_data=UserCallbackData(
-                    target='category',
+                    target='main',
                     action='get',
                     calculator_id=calculator.id
                 ).pack()
@@ -25,5 +25,4 @@ async def start_ikb() -> InlineKeyboardMarkup:
         ]
         for line in calculator_iter
     ]
-    # print(buttons)
     return InlineKeyboardMarkup(inline_keyboard=buttons)
