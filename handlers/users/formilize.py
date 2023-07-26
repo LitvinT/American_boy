@@ -1,3 +1,9 @@
+
+
+
+
+
+
 from datetime import datetime
 
 from aiogram import Router, F
@@ -250,7 +256,6 @@ async def get_potr(message: Message, state: FSMContext):
             await message.answer(
                 text='Enter hashrate as a number:',
             )
-
 
 @user_fromilize_router.message(Form.comm_pull)
 async def get_comm(message: Message, state: FSMContext):
@@ -562,3 +567,4 @@ async def get_final(message: Message, state: FSMContext):
             )
 
         await state.clear()
+
